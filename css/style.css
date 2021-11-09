@@ -222,3 +222,10 @@ body {
 .non-link {
   color: var(--black-logo-color);
 }
+.site-nav-button:hover {
+  background-color: var(--button-primary-color);
+  color: var(--logo-white-color);
+}
+.site-nav-button:focus {
+  color: var(--button-primary-color);
+}
