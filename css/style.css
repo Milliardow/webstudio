@@ -7,6 +7,7 @@
   --button-background-color: #f5f4fa;
   --footer-backgroung-color: #2f303a;
   --footer-text-color: rgba(255, 255, 255, 0.6);
+  --command-backgroung-color: #f5f4fa;
 }
 body {
   font-family: "Robota" sans-serif;
@@ -136,4 +137,85 @@ body {
   letter-spacing: 0.03em;
 
   color: var(--logo-white-color);
+}
+.section-title {
+  font-family: Roboto sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--black-logo-color);
+}
+.command-name {
+  font-family: Roboto sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--black-logo-color);
+}
+.command-prof {
+  font-family: Roboto sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-grey-color);
+}
+.section-command {
+  background-color: var(--command-backgroung-color);
+}
+.first-title {
+  font-family: Roboto sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--logo-white-color);
+}
+.first-section {
+  background-color: var(--footer-backgroung-color);
+}
+.primary-button {
+  color: var(--logo-white-color);
+  background-color: var(--button-primary-color);
+  font-family: Roboto sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.primary-button:focus,
+.primary-button:hover {
+  color: var(--button-primary-color);
+}
+.reasons {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black-logo-color);
+}
+.reasons-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71px;
+  letter-spacing: 0.03em;
+  color: var(--text-grey-color);
 }
