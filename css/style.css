@@ -200,7 +200,7 @@ body {
 }
 .primary-button:focus,
 .primary-button:hover {
-  color: var(--button-primary-color);
+  color: var(--logo-white-color);
 }
 .reasons {
   font-style: normal;
@@ -218,4 +218,7 @@ body {
   line-height: 1.71px;
   letter-spacing: 0.03em;
   color: var(--text-grey-color);
+}
+.non-link {
+  color: var(--black-logo-color);
 }
