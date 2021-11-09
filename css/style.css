@@ -5,6 +5,8 @@
   --logo-white-color: #ffffff;
   --text-grey-color: #757575;
   --button-background-color: #f5f4fa;
+  --footer-backgroung-color: #2f303a;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
 }
 body {
   font-family: "Robota" sans-serif;
@@ -26,6 +28,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--logo-first-color);
 }
+
 .logo-footer {
   font-family: Raleway sans-serif;
   font-style: normal;
@@ -65,6 +68,10 @@ body {
   letter-spacing: 0.02em;
   color: var(--text-grey-color);
 }
+.nav-contact-link:hover,
+.nav-contact-link:focus {
+  color: var(--button-primary-color);
+}
 
 .button {
   background: var(--button-background-color);
@@ -80,4 +87,53 @@ body {
 }
 .current-active {
   color: var(--button-primary-color);
+}
+
+.footer {
+  background-color: var(--footer-backgroung-color);
+}
+
+.text-gallery {
+  font-family: Roboto sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+
+  color: var(--text-grey-color);
+}
+.gallery-title {
+  font-family: Roboto sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--black-logo-color);
+}
+
+.adress-link:hover,
+.adress-link:focus {
+  color: var(--button-primary-color);
+}
+.adress-link {
+  font-family: Roboto sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-text-color);
+}
+.adress-adress {
+  font-family: Roboto sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--logo-white-color);
 }
