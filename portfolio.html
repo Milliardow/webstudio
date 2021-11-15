@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+        integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Zen+Antique&display=swap"
@@ -19,73 +22,79 @@
     rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <header>
+<!-- HEADER SECTION -->
+<header>
+    <div class="container">
         <nav class="nav">
-            <a class="logo-link link" href="./index.html">
-                Web<span class="logo-two">Studio</span>
+            <a class="logo" href="./index.html">
+                Web<span class="logo-span">Studio</span>
             </a>
             <ul class="nav-list">
-                <li class="nav-item list">
-                    <a class="non-link link" href="./index.html">Студия</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Студия</a>
                 </li>
-                <li class="nav-item list">
-                    <a class="current-active link" href="./portfolio.html">Портфолио</a>
+                <li class="nav-item">
+                    <a class="nav-link current" href="./portfolio.html">Портфолио</a>
                 </li>
-                <li class="nav-item list">
-                    <a class="non-link link" href="#adress">Контакты</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#adress">Контакты</a>
                 </li>
             </ul>
         </nav>
         <ul class="nav-contact">
-            <li class="nav-contact-item list">
-                <a class="nav-contact-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <li class="nav-contact-item">
+                <a class="nav-contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li class="nav-contact-item list">
-                <a class="nav-contact-link link" href="tel:+380961111111">+38096 111 11 11</a>
+            <li class="nav-contact-item">
+                <a class="nav-contact-link" href="tel:+380961111111">+38096 111 11 11</a>
             </li>
         </ul>
-    </header>
+    </div>
+</header>
    <main>
-<section>
-    <ul class="site-nav">
-   <li class="site-nav-item list"><button class="site-nav-button button current" type="button">Все</button></li>
-   <li class="site-nav-item list"><button class="site-nav-button button" type="button">Веб-сайты</button></li>
-   <li class="site-nav-item list"><button class="site-nav-button button" type="button">Приложения</button></li>
-   <li class="site-nav-item list"><button class="site-nav-button button" type="button">Дизайн</button></li>
-   <li class="site-nav-item list"><button class="site-nav-button button" type="button">Маркетинг</button></li>
+       <!--WORK Section-->
+       <div class="container">
+<section class="work">
+    <ul class="work-list">
+   <li class="work-item"><button class="work-button button" type="button">Все</button></li>
+   <li class="work-item"><button class="work-button button" type="button">Веб-сайты</button></li>
+   <li class="work-item"><button class="work-button button" type="button">Приложения</button></li>
+   <li class="work-item"><button class="work-button button" type="button">Дизайн</button></li>
+   <li class="work-item"><button class="work-button button" type="button">Маркетинг</button></li>
     </ul>
-    <ul class="gallery">
-        <li class="gallery-item list"><img src="./image/one.jpg" width="370" alt="" ><h3 class="gallery-title">Технокряк</h3><p class="text-gallery">Веб-сайт</p></li>
-        <li class="gallery-item list"><img src="./image/two.jpg" width="370" alt="" ><h3 class="gallery-title">Постер New Orlean vs Golden Star</h3><p class="text-gallery">Дизайн</p></li>
-        <li class="gallery-item list"><img src="./image/third.jpg" width="370" alt="" ><h3 class="gallery-title">Ресторан Seafood</h3><p class="text-gallery">Приложение</p></li>
-        <li class="gallery-item list"><img src="./image/forty.jpg" width="370" alt="" ><h3 class="gallery-title">Проект Prime</h3><p class="text-gallery">Маркетинг</p></li>
-        <li class="gallery-item list"><img src="./image/five.jpg" width="370" alt="" ><h3 class="gallery-title">Проект Boxes</h3><p class="text-gallery">Приложение</p></li>
-        <li class="gallery-item list"><img src="./image/six.jpg" width="370" alt="" ><h3 class="gallery-title">Inspiration has no Borders</h3><p class="text-gallery">Веб-сайт</p></li>
-        <li class="gallery-item list"><img src="./image/seven.jpg" width="370" alt="" ><h3 class="gallery-title">Издание Limited Edition</h3><p class="text-gallery">Дизайн</p></li>
-        <li class="gallery-item list"><img src="./image/eight.jpg" width="370" alt="" ><h3 class="gallery-title">Проект LAB</h3><p class="text-gallery">Маркетинг</p></li>
-        <li class="gallery-item list"><img src="./image/nine.jpg" width="370" alt="" ><h3 class="gallery-title">Growing Business</h3><p class="text-gallery">Приложение</p></li>
+    <ul class="gallery-list">
+        <li class="gallery-item"><img src="./image/one.jpg" width="370" alt="ноутбук" ><h3 class="gallery-title">Технокряк</h3><p class="text-gallery">Веб-сайт</p></li>
+        <li class="gallery-item"><img src="./image/two.jpg" width="370" alt="баскетболисты" ><h3 class="gallery-title">Постер New Orlean vs Golden Star</h3><p class="text-gallery">Дизайн</p></li>
+        <li class="gallery-item"><img src="./image/third.jpg" width="370" alt="ресторан" ><h3 class="gallery-title">Ресторан Seafood</h3><p class="text-gallery">Приложение</p></li>
+        <li class="gallery-item"><img src="./image/forty.jpg" width="370" alt="наушники" ><h3 class="gallery-title">Проект Prime</h3><p class="text-gallery">Маркетинг</p></li>
+        <li class="gallery-item"><img src="./image/five.jpg" width="370" alt="кирпичики" ><h3 class="gallery-title">Проект Boxes</h3><p class="text-gallery">Приложение</p></li>
+        <li class="gallery-item"><img src="./image/six.jpg" width="370" alt="монитор" ><h3 class="gallery-title">Inspiration has no Borders</h3><p class="text-gallery">Веб-сайт</p></li>
+        <li class="gallery-item"><img src="./image/seven.jpg" width="370" alt="книга" ><h3 class="gallery-title">Издание Limited Edition</h3><p class="text-gallery">Дизайн</p></li>
+        <li class="gallery-item"><img src="./image/eight.jpg" width="370" alt="лейбочка" ><h3 class="gallery-title">Проект LAB</h3><p class="text-gallery">Маркетинг</p></li>
+        <li class="gallery-item"><img src="./image/nine.jpg" width="370" alt="человек печатает за компьютером" ><h3 class="gallery-title">Growing Business</h3><p class="text-gallery">Приложение</p></li>
     </ul>
 </section>
+</div>
    </main>
-    <footer class="footer">
-    
-        <a class="logo-footer link" href="./index.html">Web<span class="span-footer">Studio</span>
+   <!--FOOTER SECTION-->
+<footer class="footer">
+    <div class="container">
+        <a class="logo-footer" href="./index.html">Web<span class="span-footer">Studio</span>
         </a>
         <address class="address" id="adress">
             <ul class="adress-list">
-                <li class="adress-adress list">г. Киев, пр-т Леси Украинки, 26</li>
-                <li class="adress-item list">
-                    <a class="adress-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <li class="adress-item">г. Киев, пр-т Леси Украинки, 26</li>
+                <li class="adress-item">
+                    <a class="adress-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
-                <li class="adress-item list">
-                    <a class="adress-link link" href="tel:+380961111111">+38096 111 11 11</a>
+                <li class="adress-item">
+                    <a class="adress-link" href="tel:+380961111111">+38096 111 11 11</a>
                 </li>
             </ul>
         </address>
-
-    </footer>
+    </div>
+</footer>
 </body>
 
 </html>

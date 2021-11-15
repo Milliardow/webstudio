@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+/*Переменные*/
 :root {
   --button-primary-color: #2196f3;
   --logo-first-color: #2196f3;
@@ -9,171 +13,96 @@
   --footer-text-color: rgba(255, 255, 255, 0.6);
   --command-backgroung-color: #f5f4fa;
 }
-body {
-  font-family: "Robota" sans-serif;
+Body {
+  background-color: white;
+  font-family: Roboto sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #757575;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
-.link {
+a {
   text-decoration: none;
 }
-
-.list {
+ul {
   list-style: none;
 }
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 
-.logo-link {
-  font-family: Raleway sans-serif;
-  font-style: normal;
+.container {
+}
+/*HEADER sections*/
+.nav {
+}
+.logo {
+  font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--logo-first-color);
 }
-
-.logo-footer {
-  font-family: Raleway sans-serif;
-  font-style: normal;
+.logo-span {
+  font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--logo-first-color);
-}
-
-.logo-two {
   color: var(--black-logo-color);
 }
-.span-footer {
-  color: var(--logo-white-color);
-}
-
-.nav-item :hover,
-.nav-item :focus {
-  color: var(--button-primary-color);
+.nav-list {
 }
 .nav-item {
-  font-family: Roboto sans-serif;
-  font-style: normal;
+}
+.nav-link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--black-logo-color);
 }
-.nav-contact-link {
-  font-family: Roboto sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--text-grey-color);
-}
-.nav-contact-link:hover,
-.nav-contact-link:focus {
-  color: var(--button-primary-color);
-}
-
-.button {
-  background: var(--button-background-color);
-  border-radius: 4px;
-}
-.button:hover,
-.button:focus {
+.nav-link:focus,
+.nav-link:hover {
+  background-color: var(--logo-white-color);
   color: var(--button-primary-color);
 }
 .current {
-  color: var(--logo-white-color);
-  background-color: var(--button-primary-color);
-}
-.current-active {
+  background-color: var(--logo-white-color);
   color: var(--button-primary-color);
 }
-
-.footer {
+.nav-contact {
+}
+.nav-contact-item {
+}
+.nav-contact-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-grey-color);
+}
+.nav-contact-link:focus,
+.nav-contact-link:hover {
+  background-color: var(--logo-white-color);
+  color: var(--button-primary-color);
+}
+.hero-section {
   background-color: var(--footer-backgroung-color);
 }
-
-.text-gallery {
-  font-family: Roboto sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
-
-  color: var(--text-grey-color);
-}
-.gallery-title {
-  font-family: Roboto sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-
-  color: var(--black-logo-color);
-}
-
-.adress-link:hover,
-.adress-link:focus {
-  color: var(--button-primary-color);
-}
-.adress-link {
-  font-family: Roboto sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--footer-text-color);
-}
-.adress-adress {
-  font-family: Roboto sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-
-  color: var(--logo-white-color);
-}
-.section-title {
-  font-family: Roboto sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--black-logo-color);
-}
-.command-name {
-  font-family: Roboto sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--black-logo-color);
-}
-.command-prof {
-  font-family: Roboto sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--text-grey-color);
-}
-.section-command {
-  background-color: var(--command-backgroung-color);
-}
-.first-title {
-  font-family: Roboto sans-serif;
-  font-style: normal;
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -182,50 +111,70 @@ body {
   text-transform: uppercase;
   color: var(--logo-white-color);
 }
-.first-section {
-  background-color: var(--footer-backgroung-color);
-}
 .primary-button {
-  color: var(--logo-white-color);
-  background-color: var(--button-primary-color);
-  font-family: Roboto sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
 }
-.primary-button:focus,
-.primary-button:hover {
-  color: var(--logo-white-color);
-}
+/*Reasons sections*/
 .reasons {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--black-logo-color);
+}
+.reasons-list {
+}
+.reasons-item {
 }
 .reasons-text {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.71px;
-  letter-spacing: 0.03em;
-  color: var(--text-grey-color);
 }
-.non-link {
-  color: var(--black-logo-color);
+/*Specific sections*/
+.specific {
 }
-.site-nav-button:hover {
-  background-color: var(--button-primary-color);
-  color: var(--logo-white-color);
+.specific-title {
 }
-.site-nav-button:focus {
-  color: var(--button-primary-color);
+.specific-list {
+}
+.specific-item {
+}
+/*Command Sections*/
+.command {
+}
+.command-title {
+}
+.command-list {
+}
+.command-item {
+}
+.command-name {
+}
+.command-prof {
+}
+/*MAIN PORTFOLIO SECTION*/
+.work {
+}
+.work-list {
+}
+.work-item {
+}
+.work-button {
+}
+.button {
+}
+.gallery-list {
+}
+.gallery-item {
+}
+.gallery-title {
+}
+.text-gallery {
+}
+/*Footer sections*/
+.footer {
+}
+.logo-footer {
+}
+.span-footer {
+}
+.address {
+}
+.adress-list {
+}
+.adress-item {
+}
+.adress-link {
 }

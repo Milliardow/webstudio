@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Студия</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+        integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Zen+Antique&display=swap"
@@ -22,91 +25,105 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- HEADER SECTION -->
     <header>
+        <div class="container">
     <nav class="nav">
-        <a class="logo-link link" href="./index.html">
-            Web<span class="logo-two">Studio</span>
+        <a class="logo" href="./index.html">
+            Web<span class="logo-span">Studio</span>
         </a>
         <ul class="nav-list">
-            <li class="nav-item list">
-                <a class="current-active link" href="./index.html">Студия</a>
+            <li class="nav-item">
+                <a class="nav-link current" href="./index.html">Студия</a>
             </li>
-            <li class="nav-item list">
-                <a class="non-link link" href="./portfolio.html">Портфолио</a>
+            <li class="nav-item">
+                <a class="nav-link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="nav-item list">
-                <a class="non-link link" href="#adress">Контакты</a>
+            <li class="nav-item">
+                <a class="nav-link" href="#adress">Контакты</a>
             </li>
         </ul>
     </nav>
     <ul class="nav-contact">
-        <li class="nav-contact-item list">
-            <a class="nav-contact-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <li class="nav-contact-item">
+            <a class="nav-contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
-        <li class="nav-contact-item list">
-            <a class="nav-contact-link link" href="tel:+380961111111">+38096 111 11 11</a>
+        <li class="nav-contact-item">
+            <a class="nav-contact-link" href="tel:+380961111111">+38096 111 11 11</a>
         </li>
     </ul>
+    </div>
         </header>
+        <!-- HERO SECTION -->
         <main>
-        <div>
-            <section class="first-section">
-                <h1 class="first-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br>ДЛЯ ВАШЕГО БИЗНЕСА </h1>
+        <div class="container">
+            <section class="hero-section">
+                <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br>ДЛЯ ВАШЕГО БИЗНЕСА </h1>
                 <button class="primary-button" type="button">Заказать услугу</button>
             </section>
         </div>
-    <section>
-        <ul>
-            <li class="list"><h3 class="reasons">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
+        <!-- REASONS SECTION -->
+        <div class="container">
+    <section class="reasons">
+        <ul class="reasons-list">
+            <li class="reasons-item"><h3 class="reasons">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
                 <p class="reasons-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
-            <li class="list"><h3 class="reasons">ПУНКТУАЛЬНОСТЬ</h3>
+            <li class="reasons-item"><h3 class="reasons">ПУНКТУАЛЬНОСТЬ</h3>
             <p class="reasons-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p></li>
-            <li class="list"><h3 class="reasons">ПЛАНИРОВАНИЕ</h3>
+            <li class="reasons-item"><h3 class="reasons">ПЛАНИРОВАНИЕ</h3>
             <p class="reasons-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p></li>
-            <li class="list"><h3 class="reasons">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
+            <li class="reasons-item"><h3 class="reasons">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
             <p class="reasons-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
         </li>
         </ul>
     </section>
-    <section>
-        <h2 class="section-title">
+    </div>
+    <!-- SPECIFIC SECTION -->
+    <div class="container">
+    <section class="specific">
+        <h2 class="specific-title">
             Чем мы занимаемся
         </h2>
-        <ul>
-            <li class="list"><img src="./image/1.jpg" width="370" alt="Программист пишет код"/></li>
-            <li class="list"><img src="./image/2.jpg" width="370" alt="Мобильная разработка"/></li>
-            <li class="list"><img src="./image/3.jpg" width="370" alt="Планшет с палитрой"/></li>
+        <ul class="specific-list">
+            <li class="specific-item"><img src="./image/1.jpg" width="370" alt="Программист пишет код"/></li>
+            <li class="specific-item"><img src="./image/2.jpg" width="370" alt="Мобильная разработка"/></li>
+            <li class="specific-item"><img src="./image/3.jpg" width="370" alt="Планшет с палитрой"/></li>
         </ul>
     </section>
-    <section class="section-command">
-        <h2 class="section-title">
+    </div>
+    <!-- COMAND SECTION -->
+    <div class="container">
+    <section class="command">
+        <h2 class="command-title">
             Наша команда
         </h2>
-        <ul>
-            <li class="list"><img src="./image/4.jpg" width="270" alt="Игорь Демьяненко" /><h4 class="command-name">Игорь Демьяненко</h4><p class="command-prof">Product Designer</p></li>
-            <li class="list"><img src="./image/5.jpg" width="270" alt="Ольга Репина"/><h4 class="command-name">Ольга Репина</h4><p class="command-prof">Frontend Developer</p></li>
-            <li class="list"><img src="./image/6.jpg" width="270" alt="Николай Тарасов" /><h4 class="command-name">Николай Тарасов</h4><p class="command-prof">Marketing</p></li>
-            <li class="list"><img src="./image/7.jpg" width="270" alt="Михаил Ермаков" /><h4 class="command-name">Михаил Ермаков</h4><p class="command-prof">UI Designer</p></li>
+        <ul class="command-list">
+            <li class="command-item"><img src="./image/4.jpg" width="270" alt="Игорь Демьяненко" /><h4 class="command-name">Игорь Демьяненко</h4><p class="command-prof">Product Designer</p></li>
+            <li class="command-item"><img src="./image/5.jpg" width="270" alt="Ольга Репина"/><h4 class="command-name">Ольга Репина</h4><p class="command-prof">Frontend Developer</p></li>
+            <li class="command-item"><img src="./image/6.jpg" width="270" alt="Николай Тарасов" /><h4 class="command-name">Николай Тарасов</h4><p class="command-prof">Marketing</p></li>
+            <li class="command-item"><img src="./image/7.jpg" width="270" alt="Михаил Ермаков" /><h4 class="command-name">Михаил Ермаков</h4><p class="command-prof">UI Designer</p></li>
             </ul>
     </section>
+    </div>
 </main>
+<!-- FOOTER SECTION -->
 <footer class="footer">
-
-    <a class="logo-footer link" href="./index.html">Web<span class="span-footer">Studio</span>
+    <div class="container">
+    <a class="logo-footer" href="./index.html">Web<span class="span-footer">Studio</span>
     </a>
     <address class="address" id="adress">
         <ul class="adress-list">
-            <li class="adress-adress list">г. Киев, пр-т Леси Украинки, 26</li>
-            <li class="adress-item list">
-                <a class="adress-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <li class="adress-item">г. Киев, пр-т Леси Украинки, 26</li>
+            <li class="adress-item">
+                <a class="adress-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li class="adress-item list">
-                <a class="adress-link link" href="tel:+380961111111">+38096 111 11 11</a>
+            <li class="adress-item">
+                <a class="adress-link" href="tel:+380961111111">+38096 111 11 11</a>
             </li>
         </ul>
     </address>
-
+</div>
 </footer>
 </body>
 </html>
